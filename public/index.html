@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Adopet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!------------ navbar -------------->
+    <nav>
+        <a class="adopet" href="index.html">Adopet</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+        <label for="menu-toggle" class="hamburguesa">&#9776;</label>
+        <div class="nav">
+            <ul>
+                <li><a class="boton-navegacion" href="./index.html">INICIO</a></li>
+                <li><a class="boton-navegacion" href="./html/tienda.html">TIENDA</a></li>
+                <li><a class="boton-navegacion" href="#">SERVICIOS</a></li>
+                <li><a class="boton-navegacion" href="#">ADOPCIONES</a></li>
+                <li><a class="boton-navegacion" href="#">CONTACTO</a></li>
+            </ul>
+            <p id="registro-link"><a class="boton-registrar" href="./html/regristro.html">REGISTRATE</a></p>
+            <p id="login-link"><a class="boton-registrar" href="./auth/index (1).html">LOGIN</a></p>
+            <button id="logout-btn" class="hidden bg-red-500 text-white px-3 py-1 rounded">Cerrar sesión</button>
+        </div>
+    </nav>
+    <div id="message" class="mt-4 text-green-600 font-semibold"></div>
+
+    <!------------ CONTENIDO DE LA PÁGINA ------------>
+    <section class="portada">
+        <img src="./Asset/Assets/CABECERA mob.png" alt="Portada móvil" class="w-full h-auto block md:hidden" />
+        <img src="./Asset/Assets/CABECERA.png" alt="Portada desktop" class="w-full h-auto hidden md:block" />
+        <div class="contenido portada">
+            <h1 class="hidden md:block">CUIDA A TUS MASCOTAS</h1>
+            <p class="hidden md:block text-lg md:text-base">Tus mascotas merecen un cuidado especial</p>
+            <button class="hidden md:inline-block">¡CONOCE MÁS!</button>
+        </div>
+    </section>
+
+    <!------------ CONTENIDO SERVICIOS ------------>
+    <section class="servicios">
+        <h2 class="text-[64px] mb-[29px] font-bold text-[#333] sm:text-center">NUESTROS SERVICIOS</h2>
+        <div class="cards-servicios">
+            <div class="card">
+                <img src="./Asset/Assets/PRODUCTOS.png" alt="" width="303">
+                <h4>Productos</h4>
+                <p class="card-text">Juguetes, higiene y suplementos diseñados para su bienestar y felicidad.</p>
+            </div>
+            <div class="card">
+                <img src="./Asset/Assets/SALUD.png" alt="" width="303">
+                <h4>Salud</h4>
+                <p class="card-text">Mantén a tu mascota activa y saludable con ejercicio, alimentación equilibrada y chequeos veterinarios.</p>
+            </div>
+            <div class="card">
+                <img src="./Asset/Assets/CUIDADOS.png" alt="" width="303">
+                <h4>Cuidados</h4>
+                <p class="card-text">Protégele del frío, garantiza su higiene y dale un espacio cómodo para descansar.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="vision">
+        <img src="./Asset/Assets/VISION mob.png" alt="Portada móvil" class="w-full h-auto block md:hidden" />
+        <img src="./Asset/Assets/VISION.png" alt="Portada desktop" class="w-full h-auto hidden md:block" />
+        <div class="contenido-vision hidden md:block">
+            <h3 class="titulo-seccion">VISIÓN</h3>
+            <p class="vision-text">Ser la referencia en bienestar y cuidado integral para mascotas, ofreciendo productos y servicios de alta calidad que promuevan su salud, comodidad y felicidad.</p>
+            <button class="font-intro-black bg-[#74A97C] hover:bg-[#45a049] text-white py-4 px-10 rounded-full cursor-pointer text-lg transition duration-300 ease-in-out" >¡CONOCE MÁS!</button>
+        </div>
+    </section>
+
+
+    <section class="mision">
+        <img class="mision-img" src="./Asset/Assets/MISION.png" alt="" width="673">
+        <div class="contenido-mision">
+            <h3 class="titulo-seccion">MISIÓN</h3>
+            <P class="mision-text">Brindar a cada mascota y su dueño una experiencia única y confiable, ofreciendo productos de calidad, servicios personalizados y contenido educativo para mejorar la vida de los animales y fortalecer el vínculo con sus humanos.</P>
+            <button class="font-intro-black bg-[#74A97C] hover:bg-[#45a049] text-white py-4 px-10 rounded-full cursor-pointer text-lg transition duration-300 ease-in-out">¡CONOCE MÁS!</button>
+        </div>
+    </section>
+
+
+    <!------------ footer -------------->
+    <div id="footer-container"></div>
+
+    <!-- Cargar Firebase (necesario antes de usarlo) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    
+
+    <script src="./auth/app (1).js"></script>
+    <script src="./js/footer.js" defer></script>
+    
+    
+
+    </body>

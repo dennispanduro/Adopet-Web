@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Firebase</title>
+  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" min-h-screen flex items-center justify-center">
+  <div class="flex items-center justify-center min-h-screen bg-white px-4">
+    <div class="bg-[#74A97C] shadow-2xl rounded-2xl p-8 w-full max-w-md">
+      <h2 class="text-3xl font-bold text-center text-white mb-6">Inica seción</h2>
+      <input
+      type="email"
+      id="email"
+      placeholder="Correo"
+      class="w-full p-3 mb-4 border border-white rounded-lg bg-white text-[#333436] placeholder:text-[#888] focus:outline-none focus:ring-2 focus:ring-white"
+      />
+      <input
+      type="password"
+      id="password"
+      placeholder="Contraseña"
+      class="w-full p-3 mb-6 border border-white rounded-lg bg-white text-[#333436] placeholder:text-[#888] focus:outline-none focus:ring-2 focus:ring-white"
+      />
+
+      <button
+      onclick="register()"
+      class="w-full bg-white hover:bg-[#e6e6e6] text-[#333436] font-bold py-3 rounded-full transition duration-300 mb-3"
+      >
+      Registrarse
+      </button>
+      <button
+      onclick="login()"
+      class="w-full bg-[#333436] hover:bg-[#005fcc] text-white font-bold py-3 rounded-full transition duration-300"
+      >
+      Iniciar Sesión
+      </button>
+
+      <p id="message" class="mt-6 text-center text-sm text-white"></p>
+    </div>
+  </div>
+
+
+
+
+  <script src="app (1).js"></script>
+</body>
+</html>

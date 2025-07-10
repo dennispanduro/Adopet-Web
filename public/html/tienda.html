@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Adopet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/tienda.css">
+</head>
+<body>
+    <!------------ navbar -------------->
+    <nav>
+        <a class="adopet" href="index.html">Adopet</a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+        <label for="menu-toggle" class="hamburguesa">&#9776;</label>
+        <div class="nav">
+            <ul>
+                <li><a class="boton-navegacion" href="../index.html">INICIO</a></li>
+                <li><a class="boton-navegacion" href="../html/tienda.html">TIENDA</a></li>
+                <li><a class="boton-navegacion" href="#">SERVICIOS</a></li>
+                <li><a class="boton-navegacion" href="#">ADOPCIONES</a></li>
+                <li><a class="boton-navegacion" href="#">CONTACTO</a></li>
+            </ul>
+            <p id="registro-link"><a class="boton-registrar" href="../html/regristro.html">REGISTRATE</a></p>
+            <p id="login-link"><a class="boton-registrar" href="../auth/index (1).html">LOGIN</a></p>
+            <button id="logout-btn" class="hidden bg-red-500 text-white px-3 py-1 rounded">Cerrar sesión</button>
+        </div>
+    </nav>
+    <div id="message" class="mt-4 text-green-600 font-semibold"></div>
+
+    <!-- Categorías -->
+    <section class="header-tienda">
+        <h1 class="title-tienda">TIENDA</h1>
+        <div class="section-categorias">
+            <h5 onclick="mostrarCategoria('ropa')">Ropa</h5>
+            <h5 onclick="mostrarCategoria('juguetes')">Juguetes</h5>
+            <h5 onclick="mostrarCategoria('comida')">Comida</h5>
+            <h5 onclick="mostrarCategoria('camas')">Camas</h5>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="flex flex-wrap justify-center items-center gap-[30px]">
+        <div class="productos"></div>
+    </section>
+
+    <!------------ footer -------------->
+    <div id="footer-container"></div>
+
+
+    <!-- Cargar Firebase (necesario antes de usarlo) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    
+    
+    <script src="../auth/app (1).js"></script>
+    <script src="../js/footer.js" defer></script>
+    <script src="../db/data.js" defer></script>
+    <script src="../js/tienda.js" defer></script>
+
+</body>
+</html>

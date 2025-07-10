@@ -1,0 +1,336 @@
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------Estilos generales del nav---------------*/
+
+.hamburguesa {
+  display: none;
+}
+
+nav {
+    background-color: #FFC063;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.adopet {
+    color: #9A6211;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.boton-navegacion {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.boton-navegacion:hover,
+.boton-navegacion:focus {
+    color: #9A6211;
+}
+
+.boton-registrar {
+    margin: 0;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: white;
+    color: #FFC063;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-registrar:hover {
+    background-color: #c79b44;
+    color: white;
+}
+
+/*---------------Estilos categorias---------------*/
+.title-tienda {
+    text-align: center;
+    padding: 20px 15px;
+    color: #353535;
+    font-size: 64px;
+}
+
+.section-categorias {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 48px;
+    font-size: 25px;
+    font-family: "Inter";
+}
+
+h5 {
+    background-color: #FFC063;
+    padding: 10px 58px;
+    color: white;
+    font-family: "Inter Regular",sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.section-categorias h5:hover {
+    background-color: #e0a742;
+    transform: translateY(-2px);
+}
+
+/* Estilos generales productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 300px;
+}
+
+.cards-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Tarjeta individual */
+.card-productos {
+    background-color: #B7DFBD;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card-productos:hover {
+    transform: scale(1.03);
+}
+
+.card-productos img {
+    max-width: 100%;
+    margin: 0;
+}
+
+.card-productos p {
+    font-family: "Intro Black";
+    margin-top: 20px;
+    font-size: 18px;
+    color: #47764E;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.card-productos button {
+    font-family: "Montserrat";
+    background-color: #47764E;
+    color: white;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 800;
+    border: none;
+    border-radius: 46px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-productos button:hover {
+    background-color: #355a3a;
+}
+
+/*---------------Estilos footer---------------*/
+
+footer {
+    background-color: #FFC063;
+    color: #5C3B09;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    font-family: "Intro", sans-serif;
+}
+
+footer div {
+    max-width: 250px;
+    margin: 10px;
+}
+
+.titulo-footer {
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+footer img {
+    margin-right: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1060px) {
+
+  /*---------------NAV---------------*/
+  .hamburguesa {
+    display: block;
+    font-size: 32px;
+    color: #9A6211;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #FFC063;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu-toggle:checked + .hamburguesa + .nav {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav p {
+    margin-top: 10px;
+  }
+
+  /*---------------TIENDA---------------*/
+
+  .title-tienda {
+    font-size: 40px;
+    padding: 15px 10px;
+  }
+
+  .section-categorias {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 15px;
+    font-size: 20px;
+  }
+
+  .section-categorias h5 {
+    padding: 10px 40px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+   .products {
+    padding: 20px 10px;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cards-productos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-productos {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .card-productos p {
+    font-size: 16px;
+  }
+
+  .card-productos button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  /*---------------FOOTER---------------*/
+
+  footer {
+    flex-direction: column;     
+    align-items: center;       
+    text-align: center;        
+    padding: 30px 10px;
+    gap: 20px;                  
+  }
+
+  footer div {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+
+  .titulo-footer {
+    font-size: 28px;           
+  }
+
+  footer p,
+  footer ul li {
+    font-size: 14px;           
+  }
+
+  footer img {
+    width: 28px;              
+    height: auto;
+  }
+}

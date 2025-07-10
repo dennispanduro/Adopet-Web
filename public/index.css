@@ -1,0 +1,621 @@
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------Estilos generales del nav---------------*/
+.hamburguesa {
+  display: none;
+}
+
+nav {
+    background-color: #FFC063;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.adopet {
+    color: #9A6211;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.boton-navegacion {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.boton-navegacion:hover,
+.boton-navegacion:focus {
+    color: #9A6211;
+}
+
+.boton-registrar {
+    margin: 0;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: white;
+    color: #FFC063;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-registrar:hover {
+    background-color: #c79b44;
+    color: white;
+}
+
+/*---------------Estilos portada---------------*/
+.portada {
+    position: relative;
+    width: 100%;
+}
+
+.img-portada {
+    width: 99.5%;
+    height: auto;
+    display: block;
+}
+
+.contenido.portada {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.contenido.portada h1 {
+    font-family: "Intro Black";
+    font-size: 96px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.contenido.portada p {
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    margin: 10px 0;
+}
+
+.contenido.portada button {
+    font-family: "Intro Black";
+    margin-top: 10px;
+    background-color: #8c6d4f;
+    color: white;
+    font-size: 15;
+    padding: 17px 50px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.contenido.portada button:hover {
+    background-color: #6b4f3a;
+}
+
+/*---------------Estilos servicios---------------*/
+
+.servicios {
+    margin-bottom: 35px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.cards-servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+h2 {
+    font-size: 64px;
+    margin-bottom: 29px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    cursor: pointer;
+    background: #52A9F0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.card h4 {
+    font-family: "Intro black";
+    font-size: 40px;
+    margin-top: 21px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card-text {
+    font-family: "Intro regular";
+    font-size: 24px;
+    margin-top: 12px;
+    color: #ffffff;
+}
+
+/*---------------Estilos vision---------------*/
+.vision {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.vision img {
+  width: 1234px;
+  height: 457px;
+  border-radius: 10px;
+}
+
+.contenido-vision {
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;            /* Justifica texto a la izquierda */
+  flex-direction: column;
+  align-items: flex-start;     /* Alinea hijos a la izquierda */
+  box-sizing: border-box;
+}
+
+.vision div {
+  position: absolute;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.vision .titulo-seccion {
+  font-family: "Montserrat";
+  font-size: 64px;
+  margin: 0 0 1rem 0;
+}
+
+.vision .vision-text {
+  color:  #353535;
+  font-size: 28px;
+  font-family: "Intro regular",sans-serif;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+/*---------------Estilos mision---------------*/
+
+.mision {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    background-color: #ffffff;
+}
+
+.mision-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    gap: 12px;
+    
+}
+
+.contenido-mision {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.titulo-seccion {
+    font-size: 64px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #353535;
+    margin-bottom: 15px;
+}
+
+.mision-text {
+    padding-left: 20px;
+    font-family: "Intro regular",sans-serif;
+    font-size: 28px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: "Intro Black";
+    background-color: #74A97C;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/*---------------Estilos footer---------------*/
+
+footer {
+    background-color: #FFC063;
+    color: #5C3B09;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    font-family: "Intro", sans-serif;
+}
+
+footer div {
+    max-width: 250px;
+    margin: 10px;
+}
+
+.titulo-footer {
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+footer img {
+    margin-right: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1060px) {
+
+  /*---------------NAV---------------*/
+  .hamburguesa {
+    display: block;
+    font-size: 32px;
+    color: #9A6211;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #FFC063;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Mostrar menú si checkbox está activo */
+  .menu-toggle:checked + .hamburguesa + .nav {
+    display: flex;
+  }
+
+  /* Hacer que el menú se alinee a la derecha */
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav p {
+    margin-top: 10px;
+  }
+
+
+  /*---------------PORTADA---------------*/
+  .contenido.portada {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: 100%;
+    text-align: right;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .contenido.portada h1 {
+    font-size: 28px;
+  }
+
+  .contenido.portada p {
+    font-size: 10px;
+  }
+
+  .contenido.portada button {
+    font-size: 14px;
+    padding: 14px 30px;
+  }
+
+  /*---------------SERVICIOS---------------*/
+  .cards-servicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card h4 {
+    font-size: 32px;
+  }
+
+  .card-text {
+    font-size: 20px;
+  }
+
+  /*---------------VISION---------------*/
+  .vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenido-vision {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    transform: none;
+    width: 90%;
+    max-width: 50%;
+    
+  }
+
+  .vision .titulo-seccion {
+    font-size: 48px;
+  }
+
+  .vision .vision-text {
+    font-size: 15px;
+  }
+
+  /*---------------MISION---------------*/
+  .mision {
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .mision-img {
+    width: 100%;
+  }
+
+  .contenido-mision {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .titulo-seccion {
+    font-size: 48px;
+  }
+
+  .mision-text {
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  /*---------------FOOTER---------------*/
+  footer {
+    flex-direction: column;     
+    align-items: center;        
+    text-align: center;         
+    padding: 30px 10px;
+    gap: 20px;                  
+  }
+
+  footer div {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+
+  .titulo-footer {
+    font-size: 28px;           
+  }
+
+  footer p,
+  footer ul li {
+    font-size: 14px;          
+  }
+
+  footer img {
+    width: 28px;               
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+   .contenido.portada {
+
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 240px;
+    text-align: right;
+    align-items: flex-end;
+    margin: 0;
+  }
+
+  .contenido.portada h1 {
+    font-size: 38px;
+  }
+
+  .contenido.portada p {
+    font-size: 10px;
+  }
+
+  .contenido.portada button {
+    font-size: 14px;
+    padding: 14px 30px;
+  }
+
+  /*---------------SERVICIOS---------------*/
+  .cards-servicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card h4 {
+    font-size: 32px;
+  }
+
+  .card-text {
+    font-size: 20px;
+  }
+
+  /* VISION */
+  .vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenido-vision {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    transform: none;
+    width: 90%;
+    max-width: 50%;
+    
+  }
+
+  .vision .titulo-seccion {
+    font-size: 38px;
+  }
+
+  .vision .vision-text {
+    font-size: 10px;
+  }
+
+  button {
+    font-family: "Intro Black";
+    background-color: #74A97C;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+   button:hover {
+    background-color: #45a049;
+  }
+}
